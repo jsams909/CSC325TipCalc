@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325tipcalc.HelloController">
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325tipcalc.HelloController">
     <columnConstraints>
         <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -30,7 +30,7 @@
         <TextField fx:id="tipTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <TextField fx:id="totalTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
         <Slider fx:id="tipPercentageSlider" blockIncrement="5.0" max="30.0" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="calcButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
     </children>
     <padding>
         <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
